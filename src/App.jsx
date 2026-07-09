@@ -170,7 +170,7 @@ export default function WikipediaReferences() {
   }
 
   async function classifyReferences(references) {
-    const res = await fetch("http://localhost:3001/api/classify-sources", {
+    const res = await fetch("https://lumora-hacks-middleware.vercel.app/api/classify-sources", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
